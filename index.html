@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device=width, initial-scale=1.0" />
+    <title>Fernando's Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+pro:300,900&dispaly=swap"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/digital_hum_logo.png" alt="" />
+        </a>
+      </div>
+      <button class="nav_toggle" aria-label="toggle navgation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav_list">
+          <il class="nav_item"><a href="#home" class="nav_link">Home</a></il>
+          <il class="nav_item"
+            ><a href="#my_works" class="nav_link">My Work</a></il
+          >
+          <il class="nav_item"><a href="#about" class="nav_link">About</a></il>
+          <il class="nav_item"
+            ><a href="#explore" class="nav_link">Explore</a></il
+          >
+          <il class="nav_item"
+            ><a href="#contact" class="nav_link">Contact</a></il
+          >
+        </ul>
+      </nav>
+    </header>
+
+    <!--INTRO SECTION-->
+    <section class="intro" id="home">
+      <h1 class="section_title_intro">
+        <strong>Fernando Amador II</strong> PhD Candidate
+      </h1>
+      <p class="section_subtitle_intro">digital humanist</p>
+      <img
+        src="images/amador.jpeg"
+        alt="picture of Fernando"
+        class="intro_img"
+      />
+    </section>
+
+    <!--WORK-->
+    <section class="my_works" id="my_works">
+      <h2 class="section_title_work">my work</h2>
+      <div class="works">
+        <div class="work">
+          <h3>history</h3>
+          <p>
+            I am a historian of US-Mexico, migration, and the environment. I am
+            particularly interested in analyzing how migrants’ spatial and
+            cultural practices are rooted in their homeland while they also
+            adopt new ones.
+          </p>
+        </div>
+        <div class="work">
+          <h3>digital humanities</h3>
+          <p>
+            I am also interested in the digital humanities, specifically GIS and
+            data analysis. I look to utilize technology to answer historical
+            questions and I am constantly looking for ways to improve my skills
+            to bring into my research and teaching.
+          </p>
+        </div>
+        <div class="work">
+          <h3>teaching</h3>
+          <p>
+            I employ various strategies and assignments to ensure my courses are
+            student-centric, adapt to multiple modes of learning, and implement
+            an anti-racist, anti-biased framework.
+          </p>
+        </div>
+      </div>
+      <a href="#explore" class="btn">explore my work</a>
+    </section>
+
+    <!--ABOUT-->
+    <section class="about" id="about">
+      <h2 class="section_title_about">about</h2>
+      <p class="section_subtitle_about">a chicano digital humanist</p>
+      <div class="about_body">
+        <p>
+          I am a PhD Candidate at Stony Brook University who studies and teaches
+          courses on US, Latin American, and environmental history. Born and
+          raised in a suburb of Los Angeles, I attended Chapman University
+          before going to Stony Brook for my graduate work. I am currently
+          finishing my dissertation, "Landscapes of Longing: Migration and the
+          Remaking of Rural Mexico."
+        </p>
+      </div>
+      <img
+        src="images/la_night.jpg"
+        alt="Palm trees extending up towards blue sky"
+        class="about_img"
+      />
+    </section>
+
+    <!--EXPLORE-->
+    <section class="explore" id="explore">
+      <h2 class="section_title_explore">explore</h2>
+      <p class="section_subtitle_explore">Take a look at my projects</p>
+      <div class="explore_list">
+        <a href="portfolio.html" class="explore_item"
+          ><h4>research</h4>
+          <img src="images/archive.jpg" alt="" class="explore_img" />
+        </a>
+
+        <a href="gis.html" class="explore_item"
+          ><h4>digital work</h4>
+          <img src="images/gis.jpg" alt="" class="explore_img" />
+        </a>
+
+        <a href="teaching.html" class="explore_item"
+          ><h4>teaching</h4>
+          <img src="images/crisis.jpg" alt="" class="explore_img" />
+        </a>
+      </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="footer" id="contact">
+      <a href="mailto:fernando.amador@stonybrook.edu" class="footer_link"
+        >fernando.amador@stonybrook.edu</a
+      >
+      <ul class="social_list">
+        <li class="social_list_item">
+          <a
+            class="social_list_link"
+            href="https://www.linkedin.com/in/fernando-amador-ii/"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social_list_item">
+          <a class="social_list_link" href="https://twitter.com/amador_ii">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
