@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device=width, initial-scale=1.0" />
+    <title>Fernando's Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+pro:300,900&dispaly=swap"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/digital_hum_logo.png" alt="digital humanities logo button" />
+        </a>
+      </div>
+      <button class="nav_toggle" aria-label="toggle navgation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav_list">
+          <il class="nav_item"
+            ><a href="index.html" class="nav_link">Home</a></il
+          >
+          <il class="nav_item"
+            ><a href="index.html#my_works" class="nav_link">My Work</a></il
+          >
+          <il class="nav_item"
+            ><a href="index.html#about" class="nav_link">About</a></il
+          >
+          <il class="nav_item"
+            ><a href="index.html#explore" class="nav_link">Explore</a></il
+          >
+          <il class="nav_item"
+            ><a href="index.html#contact" class="nav_link">Contact</a></il
+          >
+        </ul>
+      </nav>
+    </header>
+
+    <!--INTRO-->
+
+    <section class="intro" id="home">
+      <h1 class="section_title_intro">My Research</h1>
+      <p class="section_subtitle_research">digital humanist</p>
+    </section>
+
+    <!--PORTFOLIO ITEMS-->
+
+    <section class="portfolio" id="portfolio">
+      <h3 class="section_title_portfolio">Landscapes of Longing</h3>
+      <p class="section_subtitle_portfolio">dissertation</p>
+      <div class="about_body">
+        <p>
+          My dissertation, "Landscapes of Longing: Migration and the Remaking of
+          Rural Mexico," is a comprehensive history of how Mexican emigrants saved
+          rural Mexico. I explore why emigrants left their homes and how they
+          remained attached to their <i>patria chicas</i> or little fatherlands.
+          Focusing on towns from Los Altos de Jalisco during the second half of
+          the twentith century, I detail how emigrants acted as distance
+          residents through remittances, cultural productions, poltical activism,
+          and by identifying as <i>hijos ausentes</i> or absent children, all while
+          shaping their new residencies.
+        </p>
+      </div>
+      <img
+        src="images/mex_amor.jpg"
+        alt="Red wall with Mexico Mi Amor sign and cacti."
+        class="portfolio_img"
+      />
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h3 class="section_title_portfolio">
+        The Preservers and Retrievers of Stories
+      </h3>
+      <p class="section_subtitle_portfolio">archival creation</p>
+      <div class="about_body">
+        <p>
+          During my fieldwork in small town in rural Mexico, 
+          I came across unorganized
+          documents dating back to the 1800s. I decided to
+          arrange the sources and establish a historical archive. After over a dozen volunteers 
+          and I went through 15,000 documents in over six weeks, the archive
+          was set. Read more about my experience in these
+          <a
+            href="https://www.historians.org/publications-and-directories/perspectives-on-history/summer-2022/archival-structures-the-preservers-and-retrievers-of-stories-part-1"
+          >
+            American Historical Association columns.</a
+          >
+        </p>
+      </div>
+      <img
+        src="images/documents_room.jpg"
+        alt="Messy room with documents on tables and chairs."
+        class="portfolio_img"
+      />
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h3 class="section_title_portfolio">
+        guía para crear y organizar un archivo histórico local/guide 
+        to create and organize a historical archive
+      </h3>
+      <p class="section_subtitle_portfolio">guide</p>
+      <div class="about_body">
+        <p>
+          Take a look at this guide volunteers and I wrote to create and establish a
+          <a
+            href="https://docs.google.com/document/d/1k27znZPqWc2oImfpqvxuoODRepNpzEB6D00PSFq5kAg/edit?usp=sharing">
+            local historical archive.</a>
+          Note that it is still a work-in-progress, please reach out if you have questions or concerns.
+        </p>
+      </div>
+      <img src="images/glass_doc.png" alt="Reading glasses on old document." class="portfolio_img" />
+    </section>
+
+    <!--EXPLORE-->
+    <section class="explore" id="explore">
+      <h2 class="section_title_explore">explore</h2>
+      <p class="section_subtitle_explore">Take a look at my projects</p>
+      <div class="explore_list">
+        <a href="portfolio.html" class="explore_item"
+          ><h4>research</h4>
+          <img src="images/archive.jpg" alt="" class="explore_img" />
+        </a>
+
+        <a href="gis.html" class="explore_item"
+          ><h4>digital work</h4>
+          <img src="images/gis.jpg" alt="" class="explore_img" />
+        </a>
+
+        <a href="teaching.html" class="explore_item"
+          ><h4>teaching</h4>
+          <img src="images/crisis.jpg" alt="" class="explore_img" />
+        </a>
+      </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="footer" id="#contact">
+      <a href="mailto:fernando.amador@stonybrook.edu" class="footer_link"
+        >fernando.amador@stonybrook.edu</a
+      >
+      <ul class="social_list">
+        <li class="social_list_item">
+          <a
+            class="social_list_link"
+            href="https://www.linkedin.com/in/fernando-amador-ii/"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social_list_item"></li>
+        <li class="social_list_item">
+          <a class="social_list_link" href="https://twitter.com/amador_ii">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

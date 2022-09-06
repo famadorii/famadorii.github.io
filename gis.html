@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device=width, initial-scale=1.0" />
+    <title>Fernando's Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+pro:300,900&dispaly=swap"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/digital_hum_logo.png" alt="" />
+        </a>
+      </div>
+      <button class="nav_toggle" aria-label="toggle navgation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav_list">
+          <il class="nav_item"
+            ><a href="index.html" class="nav_link">Home</a></il
+          >
+          <il class="nav_item"
+            ><a href="index.html#my_works" class="nav_link">My Work</a></il
+          >
+          <il class="nav_item"
+            ><a href="index.html#about" class="nav_link">About</a></il
+          >
+          <il class="nav_item"
+            ><a href="index.html#explore" class="nav_link">Explore</a></il
+          >
+          <il class="nav_item"
+            ><a href="index.html#contact" class="nav_link">Contact</a></il
+          >
+        </ul>
+      </nav>
+    </header>
+
+    <!--INTRO-->
+
+    <section class="digital_intro" id="digital_intro">
+      <h1 class="section_title_digital">Digital Humanist</h1>
+      <div class="about_digital">
+        <p>
+          During my undergraduate studies I was introduced to 
+          geographic information systems (GIS) and since then
+          I have been interested in bringing technology into 
+          my historical research and intstruction.
+          Although I was introduced to the digital humanities through GIS, I
+          have expanded to learn and utilize front-end and back-end coding as
+          well as digital visualization tools.
+        </p>
+      </div>
+    </section>
+
+    <!--DIGITAL HUMANITIES ITEMS-->
+
+    <section class="digital" id="digital">
+      <h3 class="section_title_digital">My Personal Website</h3>
+      <p class="section_subtitle_digital">front-end web development</p>
+      <div class="about_body">
+        <p>
+          I created this website using HTML, CSS, and Javascript.
+          Although still a work in-progress, check out the code on github.
+        </p>
+      </div>
+      <a target="_blank" href="https://github.com/" class="digital_img">
+        <img
+          src="images/coding.jpg"
+          alt="Computer screen with front-end code."
+        />
+      </a>
+    </section>
+
+    <section class="digital" id="digital">
+      <h3 class="section_title_digital">
+        Mexican Restaurants of New York City StoryMap
+      </h3>
+      <p class="section_subtitle_digital">historical gis</p>
+      <div class="about_body">
+        <p>
+          Check out the GIS support I provided for Dr. Lori Flores' Mexican
+          Restaurants of New York City StoryMap.
+        </p>
+      </div>
+      <a
+        target="_blank"
+        href="https://storymaps.arcgis.com/stories/5d130c3dc16b4a86a5066c36b3b72b16"
+        class="digital_img"
+      >
+        <img
+          src="images/lupes.jpg"
+          alt="The outside seating of Lupes' restaurant."
+        />
+      </a>
+    </section>
+
+    <section class="digital" id="digital">
+      <h3 class="section_title_digital">The Value of GIS in History</h3>
+      <p class="section_subtitle_digital">article</p>
+      <div class="about_body">
+        <p>
+          Read about how and why History departments should include GIS in 
+          their curricula.
+        </p>
+      </div>
+      <a
+        target="_blank"
+        href="https://library.stonybrook.edu/2020/04/27/the-value-of-gis-part-ii/"
+        class="digital_img"
+      >
+        <img
+          src="images/cartography.jpg"
+          alt="Maps on top of maps."
+        />
+      </a>
+    </section>
+
+    <!--EXPLORE-->
+    <section class="explore" id="explore">
+      <h2 class="section_title_explore">explore</h2>
+      <p class="section_subtitle_explore">Take a look at my projects</p>
+      <div class="explore_list">
+        <a href="portfolio.html" class="explore_item"
+          ><h4>research</h4>
+          <img src="images/archive.jpg" alt="" class="explore_img" />
+        </a>
+
+        <a href="gis.html" class="explore_item"
+          ><h4>digital work</h4>
+          <img src="images/gis.jpg" alt="" class="explore_img" />
+        </a>
+
+        <a href="teaching.html" class="explore_item"
+          ><h4>teaching</h4>
+          <img src="images/crisis.jpg" alt="" class="explore_img" />
+        </a>
+      </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="footer" id="#contact">
+      <a href="mailto:fernando.amador@stonybrook.edu" class="footer_link"
+        >fernando.amador@stonybrook.edu</a
+      >
+      <ul class="social_list">
+        <li class="social_list_item">
+          <a
+            class="social_list_link"
+            href="https://www.linkedin.com/in/fernando-amador-ii/"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social_list_item">
+          <a class="social_list_link" href="https://twitter.com/amador_ii">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
