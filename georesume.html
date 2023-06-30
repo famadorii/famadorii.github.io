@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoResume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+</head>
+<body class="georesume-body">
+    <div id="map"></div>
+    <div class="georesume-title">
+        <h3>Fernando Amador II</h3>
+        <p>My Journey...with a focus on HGIS</p>
+    </div>
+    <div class="resume-buttons" style="pointer-events: auto">
+        <button onClick="Action()" block>Chapman University</button>
+        <button onClick="Action1()" block>Stony Brook University</button>
+        <button onClick="Action2()" block>New Orleans, LA</button>
+        <button onClick="Action3()" block>Philadelphia, PA</button>
+        <button onClick="Action4()" block>Mexico</button>
+    </div>
+</body>
+<script>
+
+    /*-------------------------------------------------------------------------------------------*/
+    /*------------------------------------BASEMAP------------------------------------------------*/
+    /*-------------------------------------------------------------------------------------------*/
+
+    map = L.map('map').setView([35.505, -99.09], 4);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    /*-------------------------------------------------------------------------------------------*/
+    /*------------------------------------GEOJSON------------------------------------------------*/
+    /*-------------------------------------------------------------------------------------------*/
+
+    var resumepoints = { "type": "FeatureCogeollection", "features": [{ "type": "Feature", "properties": { "capacity": "Researcher", "work": "Dissertation", "period": "Spring 2021", "responsibilities": "Conducted interviews and surveys to gather geospatial data for my dissertation" }, "geometry": { "coordinates": [-102.7070554433609, 21.187973771605698], "type": "Point" }, "id": 0 }, { "type": "Feature", "properties": { "capacity": "GIS Assistant", "work": "Chapman University's Social Science lab", "period": "Fall 2012", "responsibilities": "Assisted students in their GIS projects & Dr. Carolyn Vieira-Martinez's research on African Historical Sociolinguistics" }, "geometry": { "coordinates": [-117.85199572883569, 33.792929958116105], "type": "Point" }, "id": 1 }, { "type": "Feature", "properties": { "capacity": "GIS Assistant", "work": "Dr. Lori Flores' Mexican Restaurants of New York City", "period": "Spring 2020", "responsibilities": "Developed historical & interactive maps on StoryMap website" }, "geometry": { "coordinates": [-73.12006713096568, 40.913033750663885], "type": "Point" }, "id": 2 }, { "type": "Feature", "properties": { "capacity": "Policy Researcher", "work": "Orleans School Parish via Urban Leaders Fellow", "period": "Summer 2018", "responsibilities": "Gathered city data to produce maps on schools and pools" }, "geometry": { "coordinates": [-90.06821740878505, 29.947332206864147], "type": "Point" }, "id": 3 }, { "type": "Feature", "properties": { "capacity": "Policy Intern", "work": "Reinvestment Fund", "period": "Summer 2019", "responsibilities": "Cleaned child-care center data for internal use" }, "geometry": { "coordinates": [-75.15891701616923, 39.95203409191885], "type": "Point" }, "id": 4 }] }
+
+
+    var myLayer = L.geoJSON().addTo(map);
+    myLayer.addData(resumepoints);
+
+    function onEachFeature(feature, layer) {
+        if (feature.properties && feature.properties.capacity) {
+            layer.bindPopup("<h2>" + feature.properties.capacity + "</h2>" +
+                "<h3>" + feature.properties.work + "</h3>" +
+                "<p>" + feature.properties.period + "</p>" +
+                feature.properties.responsibilities);
+        }
+    }
+
+    L.geoJSON(resumepoints, {
+        onEachFeature: onEachFeature
+    }).addTo(map);
+
+    /*-------------------------------------------------------------------------------------------*/
+    /*---------------------------------POINT BUTTONS---------------------------------------------*/
+    /*-------------------------------------------------------------------------------------------*/
+
+    function Action() {
+        map.flyTo([33.793290601837526, -117.85211987389172], 10);
+    }
+
+    function Action1() {
+        map.flyTo([40.913033750663885, -73.12006713096568], 10);
+    }
+
+    function Action2() {
+        map.flyTo([29.943019127236997, -90.07174623172912], 10);
+    }
+
+    function Action3() {
+        map.flyTo([39.95280044485282, -75.1693860935744], 10);
+    }
+
+    function Action4() {
+        map.flyTo([21.188636964078533, -102.70748510688672], 10);
+    }
+
+</script>
+</body>
+
+</html>
