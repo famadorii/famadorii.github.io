@@ -51,8 +51,8 @@
 
     function onEachFeature(feature, layer) {
         if (feature.properties && feature.properties.capacity) {
-            layer.bindPopup("<h2>" + feature.properties.capacity + "</h2>" +
-                "<h3>" + feature.properties.work + "</h3>" +
+            layer.bindPopup("<h3>" + feature.properties.capacity + "</h3>" +
+                "<h4>" + feature.properties.work + "</h4>" +
                 "<p>" + feature.properties.period + "</p>" +
                 feature.properties.responsibilities);
         }
